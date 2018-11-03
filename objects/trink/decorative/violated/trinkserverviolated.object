@@ -1,0 +1,67 @@
+{
+  "objectName" : "trinkserverviolated",
+  "colonyTags" : ["trink","thelean"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 110,
+  "description" : "A Trinkian server rack that has been hijacked using Thelean programming.",
+  "shortdescription" : "Violated Server Rack",
+  "race" : "trink",
+  "lightColor" : [40, 0, 0],
+
+  "apexDescription" : "Did this server rack got hacked?",
+  "avianDescription" : "That server rack doesn't seems to work very well.",
+  "floranDescription" : "Floran is ssscared by shiny box.",
+  "glitchDescription" : "Intrigued. This server rack has been remotely modified.",
+  "humanDescription" : "And that's why you don't download weird files.",
+  "hylotlDescription" : "This server rack shows red lights all over.",
+
+  "aegiDescription" : "I'm afraid that this server rack has been hacked.",
+  "avikanDescription" : "This server rack has been hacked by the Thelean.",
+  "erixianDescription" : "A Trinkian server rack. If only I could access the data.",
+  "trinkDescription" : "I shouldn't scan this server rack.",
+  "hymidDescription" : "This server rack must have an incredible processing power.",
+  "notixDescription" : "A Trinkian server rack. Its computers are even more capable than our own.",
+  "jorgasianDescription" : "A Trinkian server rack.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected alien data server rack. Anomalous data detected.",
+
+  "inventoryIcon" : "trinkserverviolatedicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "trinkserverviolated.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkserverviolatedlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+      "lightPosition" : [2, 3],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinkserverviolated.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkserverviolatedlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+      "lightPosition" : [3, 3],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ],
+  
+  "soundEffect" : "/sfx/objects/bunkerpanel3.ogg",
+  "soundEffectRangeMultiplier" : 1.0
+}

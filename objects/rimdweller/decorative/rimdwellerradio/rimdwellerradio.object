@@ -1,0 +1,103 @@
+{
+  "objectName" : "rimdwellerradio",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 120,
+  "description" : "A radio modified to receive encrypted transmissions.",
+  "shortdescription" : "Rimdweller Radio",
+  "race" : "aegi",
+
+  "apexDescription" : "Wait, I can hear something behind the music!",
+  "avianDescription" : "A radio playing some music. It seems broken.",
+  "floranDescription" : "Floran likesss thiss music.",
+  "glitchDescription" : "Suspicious. I can hear some kind of weird voice behind the music.",
+  "humanDescription" : "That radio is dusty.",
+  "hylotlDescription" : "An elegantly designed radio, but it has been crudely modified.",
+  "novakidDescription" : "Dusty music box.",
+
+  "aegiDescription" : "Rimdwellers are using encrypted radio transmissions to send data.",
+  "avikanDescription" : "Alien music is quite odd.",
+  "erixianDescription" : "A radio. It's stuck on a single channel.",
+  "trinkDescription" : "There's an encrypted transmission behind.",
+  "hymidDescription" : "This type of radio is quite popular in the Alliance.",
+  "notixDescription" : "I always enjoy good music.",
+  "jorgasianDescription" : "A radio playing some music.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien radio. Analyzing frequencies. Encrypted data found.",
+
+  "lightColor" : [0, 48, 64],
+
+  "inventoryIcon" : "rimdwellerradioicon.png",
+  "orientations" : [
+    {
+      "image" : "rimdwellerradio.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+      "lightPosition" : [-1, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+      "image" : "rimdwellerradio.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+
+      "direction" : "right",
+      "lightPosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "rimdwellerradio.animation",
+  "animationParts" : {
+    "bg" : "rimdwellerradio.png",
+    "fg" : "rimdwellerradiolit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/speaker_toggle.ogg" ],
+      "off" : [ "/sfx/objects/speaker_toggle.ogg" ]
+    }
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [
+    "/objects/wired/light/light.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ],
+
+  "soundEffect" : "/sfx/objects/rimradio.ogg",
+
+  "npcToy" : {
+    "influence" : [
+      "hylotlmusic",
+      "hylotlmusic",
+      "hylotlmusic",
+      "hylotlmusicFinished"
+    ],
+    "defaultReactions" : {
+      "hylotlmusic" : [
+        [1.0, "hylotldance"]
+      ],
+      "hylotlmusicFinished" : [
+        [1.0, "hylotldance"],
+        [1.0, "smile"],
+        [1.0, "laugh"]
+      ]
+    },
+    "randomStandXRange" : [-4, 4],
+    "maxNpcs" : 4
+  }
+}

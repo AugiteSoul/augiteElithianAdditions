@@ -1,0 +1,67 @@
+{
+  "type" : "trinkviolatedfighter",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "trinkviolatednpc" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+	  //Crewmember Behaviour
+      "friendlyNpcTypes" : ["crewmembertrinkviolatedfighter"]
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "*noise*",
+			"*beep*",
+			"...!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0,
+	    [
+          {
+            "head" : [
+			  { "name" : "thea-hiddenhead" }
+			],
+            "chest" : [
+			  { "name" : "trink-violatedchest" }
+			],
+            "legs" : [
+			  { "name" : "trink-violatedlegs" }
+			],
+            "primary" : [
+			  "trinkviolatedsniper",
+			  "trinkviolatedshotgun",
+			  "trinkviolatedrifle",
+			  "trink-energizer",
+			  "trink-frostlaser"
+            ],
+            "sheathedprimary" : [
+			  "trink-wrench",
+			  "theleandagger",
+			  "theleanbroadsword",
+			  "theleanshortsword",
+			  "theleansuicidebomb"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+	  "bleedingImmunity" : {
+		"baseValue" : 1.0
+	  }
+    }
+  }
+}

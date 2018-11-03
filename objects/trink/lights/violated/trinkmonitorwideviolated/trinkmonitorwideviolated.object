@@ -1,0 +1,45 @@
+{
+  "objectName" : "trinkmonitorwideviolated",
+  "colonyTags" : ["trink","thelean"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A monitor that has been remotely modified by the Thelean.",
+  "shortdescription" : "Wide Violated Monitor",
+  "race" : "trink",  
+  "lightColor" : [50, 0, 0],
+
+  "apexDescription" : "Someone is controlling this monitor, I can feel it.",
+  "avianDescription" : "This red noise isn't normal.",
+  "floranDescription" : "Floran doesn't want to look at creepy red ssscreen...",
+  "glitchDescription" : "Scared. I don't like looking at the noise.",
+  "humanDescription" : "Someone didn't plug it correctly, I guess.",
+  "hylotlDescription" : "There is something beyond the apparent chaos of this noise.",
+
+  "aegiDescription" : "A broken Trinkian monitor.",
+  "avikanDescription" : "As red as the blood. The Thelean hacked this.",
+  "erixianDescription" : "Trinkian monitors display information in a very curious manner.",
+  "trinkDescription" : "This monitor may be dangerous. I cannot look at it without getting infected.",
+  "hymidDescription" : "I wish I knew how to decrypt all of this information.",
+  "notixDescription" : "We may have built the Trinks, but their data is too difficult to decrypt for me.",
+  "jorgasianDescription" : "A Trinkian monitor. I wonder what it displays?",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Alien interface detected. Anomalous data detected.",
+  
+  "inventoryIcon" : "trinkmonitorwideviolatedicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinkmonitorwideviolated.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkmonitorwideviolatedlit.png:<color>.<frame>" } ],
+      "imagePosition" : [0, 0],
+      "frames" : 5,
+      "animationCycle" : 0.4,
+      "lightPosition" : [3, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

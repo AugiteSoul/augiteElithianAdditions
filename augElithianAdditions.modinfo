@@ -1,0 +1,12 @@
+{
+  "name" : "Augite's Elithian Additions",
+  "version" : "1",
+  "path" : ".",
+  "dependencies" : [],
+  "metadata" : {
+	"version" : "1",
+    "author" : "augitesoul",
+    "description" : "A mod that adds things that could fit into the Elithian Races mod by Aegonian, but from myself.",
+    "support_url" : "."
+  }
+}

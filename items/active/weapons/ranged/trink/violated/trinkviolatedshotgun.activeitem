@@ -1,0 +1,153 @@
+{
+  "itemName" : "trinkviolatedshotgun",
+  "price" : 1600,
+  "inventoryIcon" : "trinkviolatedshotgun.png",
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A shotgun modified by Thelean programming.",
+  "shortdescription" : "Violated Circuitbreaker",
+  "level" : 6,
+  "tooltipKind" : "gun",
+  "category" : "Laser Shotgun",
+  "itemTags" : ["weapon","ranged","shotgun","energy","trink","thelean"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-widereticle.cursor",
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "trinkviolatedshotgun.png",
+    "middleFullbright" : "trinkviolatedshotgunlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/trinkviolatedflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.5, 0.1]
+		  }
+		}
+      }
+    },
+	"particleEmitters" : {
+	  "altMuzzleFlash" : {
+		"transformationGroups" : ["muzzle"],
+		"offsetRegion" : [0, 0, 0, 0],
+        "particles" : [
+          { "particle" : "trinkviolatedmuzzle" },
+		  { "particle" : "trinkviolatedmuzzle" },
+		  { "particle" : "trinkviolatedmuzzle" },
+		  { "particle" : "trinkviolatedmuzzle" },
+		  { "particle" : "trinkviolatedmuzzle" },
+		  { "particle" : "trinkviolatedmuzzle" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/trinkviolated.ogg" ],
+	  "altFire" : [ "/sfx/gun/trinkviolated2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.1],
+  "muzzleOffset" : [1.875, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.8,
+    "baseDps" : 13.5,
+    "energyUsage" : 55,
+    "inaccuracy" : 0.05,
+
+    "projectileCount" : 4,
+    "fireType" : "auto",
+
+    "projectileType" : "trinkviolated",
+    "projectileParameters" : {
+      "knockback" : 7
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Perfect Bounce",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+	"fireTime" : 0.4,
+	"baseDps" : 19.5,
+    "energyUsage" : 85.0,
+    "inaccuracy" : 0,
+
+	"projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "trinkviolatedbounce",
+	"projectileParameters" : {
+	  "knockback" : 8,
+	  "bounces" : 4
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : false,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

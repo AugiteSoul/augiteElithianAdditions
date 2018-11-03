@@ -1,0 +1,151 @@
+{
+  "itemName" : "trinkviolatedrifle",
+  "price" : 1600,
+  "inventoryIcon" : "trinkviolatedrifle.png",
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "An assault rifle modified by Thelean programming.",
+  "shortdescription" : "Violated Circuit Rifle",
+  "level" : 6,
+  "tooltipKind" : "gun",
+  "category" : "Laser Rifle",
+  "itemTags" : ["weapon","ranged","assaultrifle","energy","trink","thelean"],
+  "twoHanded" : true,
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "trinkviolatedrifle.png",
+    "middleFullbright" : "trinkviolatedriflelights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/trinkviolatedflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.5, 0.1]
+		  }
+		}
+      }
+    },
+	"particleEmitters" : {
+	  "altMuzzleFlash" : {
+		"transformationGroups" : ["muzzle"],
+		"offsetRegion" : [0, 0, 0, 0],
+        "particles" : [
+          { "particle" : "trinkviolatedmuzzle" },
+		  { "particle" : "trinkviolatedmuzzle" },
+		  { "particle" : "trinkviolatedmuzzle" },
+		  { "particle" : "trinkviolatedmuzzle" },
+		  { "particle" : "trinkviolatedmuzzle" },
+		  { "particle" : "trinkviolatedmuzzle" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/trinkviolated.ogg" ],
+	  "altFire" : [ "/sfx/gun/trinkviolated2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.1],
+  "muzzleOffset" : [1.875, 0.1],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.6,
+    "baseDps" : 12.5,
+    "energyUsage" : 33.5,
+    "inaccuracy" : 0.005,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "trinkviolated",
+    "projectileParameters" : {
+      "knockback" : 5
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Prefect Ricochet",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+	"fireTime" : 0.6,
+	"baseDps" : 8.5,
+    "energyUsage" : 45.0,
+    "inaccuracy" : 0,
+
+	"projectileCount" : 2,
+    "fireType" : "auto",
+	
+	"projectileType" : "trinkviolatedbounce",
+	"projectileParameters" : {
+	  "knockback" : 8,
+	  "bounces" : 2
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : false,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

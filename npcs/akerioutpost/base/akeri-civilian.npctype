@@ -1,0 +1,107 @@
+{
+  "type" : "akeri-civilian",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "simple",
+
+    "behaviorConfig" : {
+      "alwaysRun" : false,
+      "wanderWaitTime" : [2.0, 8.0],
+      "wanderTime" : [0.5, 1.0],
+      "wanderDistance" : 10
+    },
+
+    "dialog" : {
+      "converse" : "/dialog/akerioutpost.config:converse"
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "aegi" : [
+      [0, [
+		{
+		  "head" : [
+			//No Hat
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			//Hats
+			{ "name" : "aegi-fedora", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-cap", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-beanie", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-hood", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-rimdwellerhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			//Common Items
+			{ "name" : "aegi-shirt", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-shirt", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-shirt", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-rimdwellerchest", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-rimsoldierchest", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-shorts", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formallegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-casuallegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-baggylegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-rimdwellerlegs", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-rimsoldierchest", "parameters" : { "colorIndex" : 0 } }
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [
+      [0, [
+		//COMBINATION 1 -- UNPAINTED
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "thea-hiddenchest", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "thea-hiddenlegs", "parameters" : { "colorIndex" : 0 } }
+		  ]
+		},
+		//COMBINATION 2 -- PAINTED
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "trink-paintedchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } },
+			{ "name" : "trink-stripedchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } },
+			{ "name" : "trink-combatchest", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "trink-goldenchest", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "trink-rimchest", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "trink-paintedlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } },
+			{ "name" : "trink-paintedhalflegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } },
+			{ "name" : "trink-stripedlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } },
+			{ "name" : "trink-combatlegs", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "trink-goldenlegs", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "trink-rimlegs", "parameters" : { "colorIndex" : 0 } }
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}
