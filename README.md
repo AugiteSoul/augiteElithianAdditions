@@ -10,3 +10,5 @@ This includes (not everything may be implemented as of writing):
 - a new special location
 
 (By the way, all the content here is fully free to use. Have fun.)
+
+Oh, and the original mod is here. https://github.com/Aegonian/ElithianAllianceStarboundMod
