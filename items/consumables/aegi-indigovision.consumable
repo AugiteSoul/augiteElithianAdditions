@@ -8,7 +8,7 @@
   "shortdescription" : "Indigo Vision",
   "effects" : [ [
       {
-        "effect" : "doomed",
+        "effect" : "timefreeze",
 		"duration" : 15
       },
 	  {
