@@ -1,0 +1,26 @@
+{
+  "itemName" : "aegi-indigovision",
+  "rarity" : "Uncommon",
+  "price" : 650,
+  "category" : "medicine",
+  "inventoryIcon" : "aegi-indigovision.png",
+  "description" : "Selvas extracts condensed at unusually high quantities, causing strange feelings.",
+  "shortdescription" : "Indigo Vision",
+  "effects" : [ [
+      {
+        "effect" : "doomed",
+		"duration" : 15
+      },
+	  {
+		"effect" : "colorblue",
+		"duration" : 15
+    ] ],
+  "emote" : "",
+  "emitters" : [ "stimuse" ],
+  "blockingEffects" : [
+    "salveheal",
+    "bandageheal",
+    "medkitheal",
+    "nanowrapheal"
+  ]
+}

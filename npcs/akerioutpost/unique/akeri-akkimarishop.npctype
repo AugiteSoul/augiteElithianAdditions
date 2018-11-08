@@ -1,0 +1,87 @@
+{
+  "type" : "akeri-akkimarishop",
+  "baseType" : "thea-loungingmerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "akerioutpostakkimarishop" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 16,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Kronan's Wares",
+          "subtitle" : "The main source of income of Akeri Horyu"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Come see Kronan's fun things!"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come back if you have money."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Kronan shows you the way."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Sell things? Buy things?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Kronan wants you to remember Akeri Horyu!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "trink-goldenchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "trink-rimlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

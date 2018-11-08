@@ -1,0 +1,87 @@
+{
+  "type" : "akeri-theleanweapons",
+  "baseType" : "thea-loungingmerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "akerioutposttheleanweapons" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 16,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Vherd's Thelean Artifacts",
+          "subtitle" : "Stolen from the Dominion"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Feel free to take a look, but don't touch."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "You can come back whenever you want."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Follow me."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Let's trade, I guess. Be careful."
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "..."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thelean-mediumhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "thelean-mediumchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "thea-hiddenlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

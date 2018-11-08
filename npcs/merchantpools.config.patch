@@ -1,0 +1,40 @@
+[
+	{ "op" : "add", "path" : "/akerioutposttheleanweapons",
+		"value" : [
+			[ 0, [
+			  //Raw Materials
+			  { "item": { "name": "theleanmetal" }},
+			  { "item": { "name": "theleantissue" }},
+			  { "item": { "name": "centensianmetal" }},
+			  { "item": { "name": "centensiantech" }},
+			  //Melee Weapons
+			  { "item": { "name": "theleanbroadsword" }},
+			  { "item": { "name": "theleandagger" }},
+			  { "item": { "name": "theleanshortsword" }},
+			  { "item": { "name": "theleanshield" }},
+			  //Ranged Weapons
+			  { "item": { "name": "thelean-assaultrifle" }},
+			  { "item": { "name": "thelean-pistol" }},
+			  { "item": { "name": "thelean-rocketlauncher" }},
+			  { "item": { "name": "thelean-sniperrifle" }},
+			  { "item": { "name": "thelean-minigun" }},
+			  //Books
+			  { "item": { "name": "theleanreport1-codex" }},
+			  { "item": { "name": "theleanreport2-codex" }},
+			  { "item": { "name": "theleandata-codex" }},
+			  { "item": { "name": "theleanrogue-codex" }}
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/akerioutpostdrugdealer",
+		"value" : [
+			[ 0, [
+			  //Everything
+			  { "item": { "name": "aegi-indigovision" }},
+			  { "item": { "name": "aegi-purplehaze" }},
+			  { "item": { "name": "avikan-centensquicksand" }},
+			  { "item": { "name": "trink-urandom" }}
+			] ]
+		]
+	},
+]
