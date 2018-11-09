@@ -1,0 +1,27 @@
+{
+  "itemName" : "aegi-purplehaze",
+  "rarity" : "Uncommon",
+  "price" : 700,
+  "category" : "medicine",
+  "inventoryIcon" : "aegi-purplehaze.png",
+  "description" : "A strange drug that puts the user in a deep sleep.",
+  "shortdescription" : "Purple Haze",
+  "effects" : [ [
+      {
+        "effect" : "regeneration4",
+		"duration" : 60
+      },
+	  {
+		"effect" : "paralysis",
+		"duration" : 60
+	  }
+    ] ],
+  "emote" : "sleepy",
+  "emitters" : [ "stimuse" ],
+  "blockingEffects" : [
+    "salveheal",
+    "bandageheal",
+    "medkitheal",
+    "nanowrapheal"
+  ]
+}

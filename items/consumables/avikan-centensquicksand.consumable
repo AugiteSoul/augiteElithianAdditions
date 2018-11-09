@@ -1,0 +1,28 @@
+{
+  "itemName" : "avikan-centensquicksand",
+  "rarity" : "Legendary",
+  "price" : 2600,
+  "category" : "medicine",
+  "inventoryIcon" : "avikan-centensquicksand.png",
+  "description" : "Centensian machinery that transfers data to a living being. May be dangerous.",
+  "shortdescription" : "Centens' Quicksand",
+  "effects" : [ [
+      {
+        "effect" : "centensianliquidslow",
+		"duration" : 60
+      },
+	  {
+		"effect" : "rage",
+		"duration" : 45,
+		"powerModifier" : 2
+	  }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+    "salveheal",
+    "bandageheal",
+    "medkitheal",
+    "nanowrapheal"
+  ]
+}
