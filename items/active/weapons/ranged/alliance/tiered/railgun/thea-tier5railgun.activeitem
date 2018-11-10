@@ -1,7 +1,7 @@
 {
   "itemName" : "thea-tier5railgun",
   "price" : 275,
-  "inventoryIcon" : "thea-tier5shotgun.png",
+  "inventoryIcon" : "thea-tier5railgun.png",
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "A standard-issue Alliance railgun.",
@@ -17,8 +17,8 @@
 
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
   "animationParts" : {
-    "middle" : "thea-tier5shotgun.png",
-    "middleFullbright" : "thea-tier5shotgunlights.png",
+    "middle" : "thea-tier5railgun.png",
+    "middleFullbright" : "thea-tier5railgunlights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
   },
   "animationCustom" : {
