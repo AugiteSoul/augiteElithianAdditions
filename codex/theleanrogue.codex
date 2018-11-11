@@ -1,0 +1,21 @@
+{
+  "id" : "theleanrogue",
+  "species" : "other",
+  "title" : "About the Thelean Rogues",
+  "description" : "A Thelean data drive written by a nameless hero to all rogue Theleans.",
+  "icon" : "codexthelean.png",
+  "contentPages" : [
+  "That data drive has been corrupted. No idea why. I found my computing matrix destroyed by a hole from side to side in the interface, still dripping
+  with molten metal. All the other people working in my lab were lying dead on the shiny black floor. And as I am writing this, they're probably coming 
+  to me. So what is best option for me? No weapons, no tech anymore. I will die on the ground of Thelea. Returning to dust, for all eternity.
+  
+  No future. Not for me, at least. 
+  
+  [DATA CORRUPTED]"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "legendary",
+    "price" : 25
+  }
+}

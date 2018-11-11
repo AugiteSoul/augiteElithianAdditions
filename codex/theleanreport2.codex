@@ -1,0 +1,30 @@
+{
+  "id" : "theleanreport2",
+  "species" : "other",
+  "title" : "Dominion Report 3284-F",
+  "description" : "A Thelean data drive containing internal scientific data.",
+  "icon" : "codexthelean.png",
+  "contentPages" : [
+  "^red;Introduction^white;
+
+This internal document lists various scientific data collected by Teams S-26 and S-27 around the planet Elithia (home of the "Elithian Alliance")
+
+CONFIDENTIALITY LEVEL: 3",
+
+"...this way, we collected data in a more flexible way than the older security leak detected in ENE-26F-4C ("Enerth 26F") personal computers, which
+was fixed after [REDACTED] interacted with around 108,600 units for 2.24 planetary revolutions. Data collected varies between personal data (worthless?),
+security algorithms, and military data such as weapon specifications and [REDACTED]. However, remotely controlled...
+",
+
+"Notes from [REDACTED]:
+Some data has been corrupted before writing on data drive.
+
+If it happens again, you're fired. Much like your assistant that got fired yesterday because of a malfunctioning computing matrix.
+"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "legendary",
+    "price" : 25
+  }
+}

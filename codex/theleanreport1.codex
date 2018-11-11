@@ -1,0 +1,31 @@
+{
+  "id" : "theleanreport1",
+  "species" : "other",
+  "title" : "Dominion Report 6777-D",
+  "description" : "A Thelean data drive containing informations about progress on various missions.",
+  "icon" : "codexthelean.png",
+  "contentPages" : [
+  "^red;Introduction^white;
+
+This internal document lists progress on most missions of type 1-A (Key Objectives).
+
+CONFIDENTIALITY LEVEL: 2",
+
+"^red;Military Objectives^white;
+
+Complete destruction of the Nomada Fleet and extermination of the Avikan species. Reason: unauthorized hoarding of Ce'Tennan artifacts of great value (see Report 0624-B), usage of Ce'tennan technology.
+
+Tracking and destroying any Akkimari bounty hunters. Reason: collective desire of retrieving Artifact 090 "Kel'Chis", light usage of Ce'Tennan artifacts, disappearance of multiple Dominion ships.",
+
+"^red;Internal Objectives^white;
+
+Increasing control over the Outer Colonies. Reason: [REDACTED]
+
+[REDACTED]"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "legendary",
+    "price" : 25
+  }
+}

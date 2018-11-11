@@ -16,7 +16,7 @@
 		"duration" : 60
 	  }
     ] ],
-  "emote" : "sleepy",
+  "emote" : "sleep",
   "emitters" : [ "stimuse" ],
   "blockingEffects" : [
     "salveheal",

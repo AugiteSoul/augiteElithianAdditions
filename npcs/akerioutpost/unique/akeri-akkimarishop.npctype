@@ -69,13 +69,13 @@
       [0, [
           {
             "head" : [
-              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "akkimari-scavengerhead4", "parameters" : { "colorIndex" : 0 } }
             ],
             "chest" : [
-              { "name" : "trink-goldenchest", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "akkimari-scavengerchest2", "parameters" : { "colorIndex" : 0 } }
             ],
             "legs" : [
-              { "name" : "trink-rimlegs", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "akkimari-scavengerlegs3", "parameters" : { "colorIndex" : 0 } }
             ],
             "back" : [
               { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }

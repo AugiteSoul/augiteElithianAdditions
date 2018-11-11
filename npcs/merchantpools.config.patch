@@ -21,7 +21,6 @@
 			  //Books
 			  { "item": { "name": "theleanreport1-codex" }},
 			  { "item": { "name": "theleanreport2-codex" }},
-			  { "item": { "name": "theleandata-codex" }},
 			  { "item": { "name": "theleanrogue-codex" }}
 			] ]
 		]
@@ -36,5 +35,5 @@
 			  { "item": { "name": "trink-urandom" }}
 			] ]
 		]
-	},
+	}
 ]
