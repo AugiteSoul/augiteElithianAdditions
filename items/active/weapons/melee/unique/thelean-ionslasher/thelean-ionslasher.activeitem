@@ -1,0 +1,49 @@
+{
+  "itemName" : "thelean-ionslasher",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A prototype melee weapon that appears to be of Thelean origin.",
+  "shortdescription" : "^orange;XC-0F Daesia^white;",
+  "tooltipKind" : "thea-sword-unique-mf",
+  "category" : "[REDACTED]",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","thelean","theaUnique"],
+
+  "inventoryIcon" : "thelean-ionslashericon.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/energybroadsword.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/ionswing.ogg", "/sfx/melee/ionswing2.ogg", "/sfx/melee/ionswing3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 5.0,
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 1.2,
+    "baseDps" : 13.5,
+
+    "stances" : {
+      "windup1" : {
+        "duration" : 0.15
+      }
+    }
+  },
+
+  "altAbilityType" : "flipslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
