@@ -1,0 +1,11 @@
+{
+  "name" : "forcefieldtier1",
+  "effectConfig" : {
+    "color" : "7f7f7f7f"
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "forcefield.lua"
+  ]
+}
