@@ -1,0 +1,16 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "projector" : {
+        "default" : "on",
+        "states" : {
+          "on" : {
+            "frames" : 6,
+            "cycle" : 0.7,
+            "mode" : "loop"
+          }
+        }
+      }
+    }
+  }
+}

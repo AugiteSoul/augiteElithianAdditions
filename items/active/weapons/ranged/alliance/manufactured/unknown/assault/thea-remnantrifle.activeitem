@@ -1,0 +1,98 @@
+{
+  "itemName" : "thea-remnantrifle",
+  "price" : 640,
+  "inventoryIcon" : "thea-remnantrifle.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "An assault rifle modified with Remnant technology.",
+  "manufacturer" : "^gray;Unknown^reset;",
+  "shortdescription" : "Haunter H-4",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-gun-mf-attachment",
+  "category" : "Assault Rifle",
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","mysterycreator","allianceUpgradeable","remnant"],
+  "twoHanded" : true,
+  
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_assault1",
+  
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "thea-remnantrifle.png",
+    "middleFullbright" : "thea-remnantriflelights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/remnantenergyflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.875, 0.125]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/remnant_fast.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.875, 0.125],
+  "muzzleOffset" : [2.25, 0.375],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "ancientcurse",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.35,
+    "baseDps" : 9.5,
+    "energyUsage" : 19.5,
+    "inaccuracy" : 0.035,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "remnantenergybullet",
+    "projectileParameters" : {
+      "knockback" : 6
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.125,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
+}

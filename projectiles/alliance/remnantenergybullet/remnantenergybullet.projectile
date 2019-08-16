@@ -1,0 +1,24 @@
+{
+  "projectileName" : "remnantenergybullet",
+  "physics" : "laser",
+  "bounces" : 2,
+  "image" : "remnantenergybullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 90,
+  "supportsProcessing" : true,
+  //"emitters" : [ "trinklasertrail" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "lightColor" : [35, 60, 75],
+  "fullbright" : true,
+  "statusEffects" : [
+    "ancientcurse"
+  ],
+  "damageKind" : "ancientcurse"
+}

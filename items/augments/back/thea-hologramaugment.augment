@@ -1,0 +1,22 @@
+{
+  "itemName" : "thea-hologramaugment",
+  "price" : 5000,
+  "rarity" : "Uncommon",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "thea-hologramaugment.png",
+  "description" : "A cosmetic augment that turns you into an hologram.",
+  "shortdescription" : "Hologram Augment",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "thea-hologramaugment",
+    "displayName" : "Hologram Augment",
+    "displayIcon" : "/items/augments/back/thea-hologramaugment.png",
+    "effects" : [ "thea-hologramaug" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

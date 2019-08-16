@@ -1,0 +1,19 @@
+{
+  "name" : "thea-hologramaug",
+  "effectConfig" : {
+    "animationFrames" : 5,	//How many frames to cycle through
+    "animationTime" : 0.1,	//How fast to cycle through frames (in seconds)
+    "glitchMinTime" : 0.1,	//Minimum amount of time in between glitches. If 0, there will be no glitches
+    "glitchMaxTime" : 3.0	//Maximum amount of time in between glitches
+  },
+  "defaultDuration" : 1.0,
+
+  "scripts" : [
+    "thea-hologramaug.lua"
+  ],
+
+  "animationConfig" : "thea-hologramaug.animation",
+
+  "label" : "Holographic",
+  "icon" : "/interface/statuses/thea-hologram.png"
+}
